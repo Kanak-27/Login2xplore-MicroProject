@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shipment Management Form</title>
+    <meta charset="UTF-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- JPDB JS SDK (Replace with the actual SDK or script needed) -->
+    <script src="http://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <h2 class="text-center">Shipment Management Form</h2>
+    <form id="shipmentForm">
+        <div class="form-group">
+            <label for="shipmentNo">Shipment No.</label>
+            <input type="text" class="form-control" id="shipmentNo" onchange="getShipment()" placeholder="Enter Shipment No.">
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text" class="form-control" id="description" placeholder="Enter Description">
+        </div>
+
+        <div class="form-group">
+            <label for="source">Source</label>
+            <input type="text" class="form-control" id="source" placeholder="Enter Source">
+        </div>
+
+        <div class="form-group">
+            <label for="destination">Destination</label>
+            <input type="text" class="form-control" id="destination" placeholder="Enter Destination">
+        </div>
+
+        <div class="form-group">
+            <label for="shipDate">Shipping Date</label>
+            <input type="date" class="form-control" id="shipDate">
+        </div>
+
+        <div class="form-group">
+            <label for="deliveryDate">Expected Delivery Date</label>
+            <input type="date" class="form-control" id="deliveryDate">
+        </div>
+
+        <button type="button" class="btn" id="save" onclick="saveData()" disabled>Save</button>
+        <button type="button" class="btn" id="change" onclick="changeData()" disabled>Update</button>
+        <button type="button" class="btn" id="reset" onclick="resetForm()" disabled>Reset</button>
+    </form>
+</div>
+
+<script src="/Js/index.js">
+</script>
+
+</body>
+</html>
